@@ -22,7 +22,7 @@ xSpacing=50;
 ySpacing=50;
 this.brickCount=brickCount;
 this.x=int(width/2-6*xSpacing);
-float this.y=height/7;
+this.y=float (height/7);
 size=40;
 }
 }
