@@ -1,5 +1,5 @@
 class Brick{
-float x;
+int x;
 int y;
 float size;
 int brickCount;
@@ -21,7 +21,7 @@ Brick(int brickCount){
 xSpacing=50;
 ySpacing=50;
 this.brickCount=brickCount;
-this.x=width/2-5.5*xSpacing;
+this.x=int(width/2-6*xSpacing);
 this.y=height/7;
 size=40;
 }
