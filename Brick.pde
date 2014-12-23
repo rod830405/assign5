@@ -21,8 +21,8 @@ Brick(int brickCount){
 xSpacing=50;
 ySpacing=50;
 this.brickCount=brickCount;
-this.x=int(width/2-6*xSpacing);
-this.y=float (height/7);
+this.x=width/2-6*xSpacing;
+this.y=height/7;
 size=40;
 }
 }
