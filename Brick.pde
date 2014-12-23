@@ -1,6 +1,6 @@
 class Brick{
 float x;
-int y;
+float y;
 float size;
 int brickCount;
 float xSpacing;
@@ -12,7 +12,7 @@ rectMode(CENTER);
 for(int i=0;i<brickCount;i++){
 int col=i/12;
 int row=i%12;
-rect(x+xSpacing*row,y+ySpacing*col,size,size);
+rect(x+xSpacing*int(row),y+ySpacing*int(col),size,size);
 }
 }
 
@@ -22,7 +22,7 @@ xSpacing=50;
 ySpacing=50;
 this.brickCount=brickCount;
 this.x=width/2-6*xSpacing;
-this.y=float(floor(height/7));
+this.y=height/7;
 size=40;
 }
 }
