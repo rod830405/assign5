@@ -37,7 +37,6 @@ Ball(){
 size=12;
 y=height-height/25-this.size;
 xSpeed=random(-2,2);
-println(xSpeed);
 ySpeed=2;
 
 }
