@@ -1,6 +1,6 @@
 class Brick{
 float x;
-float y;
+int y;
 float size;
 int brickCount;
 float xSpacing;
