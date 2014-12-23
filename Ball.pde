@@ -4,22 +4,27 @@ float y;
 float xSpeed;
 float ySpeed;
 float size;
+float size2 =12;
+int speed =5;
 
 void move(){
-x+=xSpeed;
+fill(255);
+size = 0;
+ellipse(clickedX,y,size2,size2);
+clickedX+=xSpeed;
 y+=ySpeed;
-if(x-size/2<0){
-x=0+size/2;
+if(clickedX-size2/2<0){
+clickedX=0+size2/2;
 xSpeed*=-1;
-}else if(x+size/2>width){
-x=width-size/2;
+}else if(clickedX+size2/2>width){
+clickedX=width-size2/2;
 xSpeed*=-1;
 }
-if(y-size/2<0){
-y=0+size/2;
+if(y-size2/2<0){
+y=0+size2/2;
 ySpeed*=-1;
-}else if(y+size/2>bar.y-bar.thickness/2&&x>=bar.x-bar.barLeng/2&&x<=bar.x+bar.barLeng/2){
-y=bar.y-bar.thickness/2-size/2;
+}else if(y+size2/2>bar.y-bar.thickness/2&&clickedX>=bar.x-bar.barLeng/2&&clickedX<=bar.x+bar.barLeng/2){
+y=bar.y-bar.thickness/2-size2/2;
 ySpeed*=-1;
 }
 }
@@ -36,8 +41,7 @@ Ball(){
 
 size=12;
 y=height-height/25-this.size;
-xSpeed=random(-2,2);
-ySpeed=2;
-
+xSpeed=random(-3,3);
+ySpeed=sqrt(sq(speed)-sq(xSpeed));
 }
 }
