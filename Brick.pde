@@ -12,7 +12,7 @@ rectMode(CENTER);
 for(int i=0;i<brickCount;i++){
 int col=i/12;
 int row=i%12;
-rect(x+xSpacing*row,y+ySpacing*col,size,size);
+rect(floor(x+xSpacing*row),floor(y+ySpacing*col),size,size);
 }
 }
 
